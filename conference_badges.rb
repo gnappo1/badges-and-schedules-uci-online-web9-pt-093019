@@ -17,6 +17,6 @@ end
  end
  
  def printer(people)
-   batch_badge_creator(people).each {|sentence| puts sentence }
-   assign_rooms(people).each {|sentence| puts sentence }
+   final_array = batch_badge_creator(people).concat(assign_rooms(people)).each {|sentence| puts sentence }
+   #assign_rooms(people).each {|sentence| puts sentence }
  end
