@@ -5,9 +5,9 @@ def badge_maker(name)
 end
 
  def batch_badge_creator(people)
-   sentences = []
-   people.each {|person| sentences << badge_maker(person)}
-   sentences
+   #sentences = []
+   people.collect {|person| badge_maker(person)}
+   #sentences
  end
  
  def assign_rooms(people)
